@@ -1,18 +1,13 @@
 extends RigidBody2D
 
-export var speed = 200
-export var acceleration = 0.1
-export var c_friction = 0.2 setget set_friction
-
-func set_friction(val):
-	friction = val
+@export var speed = 200
+@export var acceleration = 0.1
+@export var friction = 0.2
 
 var velocity = Vector2(0, 0)
 
 func _init():
-	friction = c_friction
 	gravity_scale = 0
-	mode = RigidBody2D.MODE_CHARACTER
 
 func get_input():
 	var input = Vector2()
@@ -33,3 +28,8 @@ func _physics_process(delta):
 	else:
 		velocity = lerp(velocity, Vector2.ZERO, friction)
 	linear_velocity = velocity
+
+	var target_angle = position.angle_to(get_global_mouse_position())
+	var current_angle = rotation
+	var angle_difference = (target_angle - current_angle)
+	apply_torque(angle_difference * 100000)

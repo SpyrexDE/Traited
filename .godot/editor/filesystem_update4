@@ -1,0 +1,3 @@
+res://scenes/TopDown.tscn
+res://addons/traited/custom_types/TopDownCharacter.gd
+res://scenes/SideView.tscn

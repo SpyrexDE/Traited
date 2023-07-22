@@ -1,0 +1,14 @@
+2a60927148abd1d33b818b535e306557
+::res://::1690057674
+README.md::TextFile::-1::1690057613::0::1::::<><>::
+::res://addons/::1650099752
+::res://addons/traited/::1690057620
+CONFIG.gd::GDScript::-1::1690057668::0::1::::<>Node<>::
+plugin.cfg::TextFile::-1::1650103919::0::1::::<><>::
+plugin.gd::GDScript::-1::1690057668::0::1::::<>EditorPlugin<>::
+::res://addons/traited/custom_types/::1690057620
+SideViewCharacter.gd::GDScript::-1::1690057668::0::1::::<>RigidBody2D<>::
+TopDownCharacter.gd::GDScript::-1::1690057668::0::1::::<>RigidBody2D<>::
+::res://scenes/::1690057620
+SideView.tscn::PackedScene::-1::1690057668::0::1::::<><>::
+TopDown.tscn::PackedScene::-1::1690057668::0::1::::<><>::res://addons/traited/custom_types/TopDownCharacter.gd
